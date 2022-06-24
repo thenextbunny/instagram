@@ -31,9 +31,9 @@ main {
     display: flex;
     justify-content: center;
     height: 100vh;
-    margin-top: 10px;
     min-height: 630px;
     width: 100%;
+    padding-top: 15px;
 }
 
 /* Containers */
@@ -46,23 +46,18 @@ main {
 
 /* Image container */
 #image-container {
-    align-items: center;
     background: url(../images/phone/phone.png) no-repeat center;
-    display: flex;
-    height: 640px;
-    justify-content: center;
     position: relative;
+    height: 640px;
     width: 400px;
 }
 
     /* Carousel */
     .carousel {
-        align-items: center;
-        display: flex;
-        height: 100%;
-        margin-left: 95px;
+        float: right;
+        right: 26px;
+        top: 28px;
         position: absolute;
-        top: -22px;
     }
 
     .fade {
@@ -77,18 +72,12 @@ main {
 
 /* Login container */
 #login-container {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    min-height: 100%;
-    min-width: 280px;
+    min-width: 275px;
     width: 350px;
-}
-
-#login-container > div {
-    width: 100%;
 }
 
     /* Logo */
@@ -210,19 +199,17 @@ main {
     }
 
     /* Facebook */
-    form div.box-facebook {
-        border-radius: 4px;
-    }
-
-    form div.box-facebook button{
-        background-color: transparent;
+    form div.box-facebook button {
+        background: transparent;
         border: none;
+        border-radius: 4px;
         color: #29487d;
         cursor: pointer;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
-        height: 30px;  
-        line-height: 30px;
+        height: 35px;  
+        line-height: 35px;
+        width: 100%;
     }
 
     /* Forgot password */
@@ -323,15 +310,11 @@ select {
 /* Media queries */
     /* Extra small devices (portrait phones, less than 576px) */
     @media (max-width: 575.98px) {
-        main {
-            min-height: 570px;
-        }
-
         #image-container {
             display: none;
         }
 
-        form div.box-facebook, form div.box-facebook button {
+        form div.box-facebook button {
             background-color: #0095f6;
             color: #fff;
         }
@@ -339,15 +322,11 @@ select {
 
     /* Small devices (landscape phones, 576px and up) */
     @media (min-width: 576px) and (max-width: 767.98px) {
-        main {
-            min-height: 570px;
-        }
-
         #image-container {
             display: none;
         }
-    
-        form div.box-facebook, form div.box-facebook button {
+        
+        form div.box-facebook button {
             background-color: #0095f6;
             color: #fff;
         }
@@ -355,15 +334,11 @@ select {
     
     /* Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991.98px) {
-        main {
-            min-height: 570px;
-        }
-        
         #image-container {
             display: none;
         }
 
-        form div.box-facebook, form div.box-facebook button {
+        form div.box-facebook button {
             background-color: #0095f6;
             color: #fff;
         }
