@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/37f54710bc.js" crossorigin="anonymous"></script>
+
+    <!-- Title and FavIcon-->
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="./assets/images/logos/instagram-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <article>
+        <main>
+            <section id="image-container">
+                <div class="carousel">
+                    <img class="carousel-images fade" src="./assets/images/screenshots/screenshot1.png">
+                    <img class="carousel-images fade" src="./assets/images/screenshots/screenshot2.png">
+                    <img class="carousel-images fade" src="./assets/images/screenshots/screenshot3.png">
+                    <img class="carousel-images fade" src="./assets/images/screenshots/screenshot4.png">
+                </div>
+            </section>
+            <section id="login-container">
+                <div class="bg-white">
+                    <div class="logo">
+                        <img src="./assets/images/logos/instagram-logo.png" alt="Instagram">
+                    </div>
+                    <form> <!-- Form submit button is disabled in "form.js" script -->
+                        <div class="form-box input-user">
+                            <input type="text" name="user" id="user" required>
+                            <label for="user">Num téléphone, nom d'utilisateur ou e-mail</label>
+                        </div>
+                        <div class="form-box input-user">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Mot de passe</label>
+                            <div class="password-view">
+                                <button type="button">
+                                    <span class="password-show">Affiche</span>
+                                    <span class="password-hide">Masquer</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <input type="button" name="login" id="login" value="Se connecter">
+                        </div>
+                        <div class="form-box box-or">
+                            <div class="bar"></div>
+                            <div class="text">Ou</div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="form-box box-facebook">
+                            <button type="button">
+                                <span>
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </span>
+                                <span>Se connecter avec Facebook</span>
+                            </button>
+                        </div>
+                        <div class="form-box box-forgot-password">
+                            <a href="#!">Mot de passe oblié ?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="bg-white new-user">
+                    <p>Vous n’avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+                </div>
+                <div class="get-the-app">
+                    <p>Téléchargez l’application.</p>
+                    <span class="badge">
+                        <a href="#!">
+                            <img src="./assets/images/badges/fr-badge-ios.png" alt="Télécharger dans l´App Store">
+                        </a>
+                    </span>
+                    <span class="badge">
+                        <a href="#!">
+                            <img src="./assets/images/badges/fr-badge-android.png" alt="Disponible sur Google Play">
+                        </a>
+                    </span>
+                </div>
+            </section>
+        </main>
+    </article>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#!">Meta</a></li>
+                <li><a href="#!">À prpos</a></li>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Emplois</a></li>
+                <li><a href="#!">Aide</a></li>
+                <li><a href="#!">API</a></li>
+                <li><a href="#!">Confidentialité</a></li>
+                <li><a href="#!">Conditions</a></li>
+                <li><a href="#!">Comptes principaux</a></li>
+                <li><a href="#!">Hashtags</a></li>
+                <li><a href="#!">Lieux</a></li>
+                <li><a href="#!">Instagram Lite</a></li>
+                <li><a href="#!">Importation des contacts et non-utilisateurs</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#!">Danse</a></li>
+                <li><a href="#!">Alimentation et boissons</a></li>
+                <li><a href="#!">Maison et jardin</a></li>
+                <li><a href="#!">Musique</a></li>
+                <li><a href="#!">Arts visuels</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="select-language">
+                    <span class="current-language">Français <i class="fa-solid fa-angle-down"></i></span>
+                    <select name="language">
+                        <option value="en">English (US)</option>
+                        <option value="es-la">Español</option>
+                        <option value="it">Italiano</option>
+                        <option value="fr" selected>Français</option>
+                        <option value="pt-br">Português (Brasil)</option>
+                    </select>
+                </li>
+                <li>© 2022 Instagram par Meta</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="thenextbunny">
+                    <p>Clone réalisé par <strong>Vitor Coelho</strong></p>
+                    <span>
+                        <a href="http://github.com/thenextbunny" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                    </span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/vitorcoelhot/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                    <span>
+                        <a href="mailto:vitorcoelhosilvat@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/javascript/change-language.js"></script>
+    <script src="./assets/javascript/form.js"></script>
+    <script src="./assets/javascript/image-slide.js"></script>
+</body>
+</html>
