@@ -5,7 +5,7 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    const slides = document.getElementsByClassName("carousel-images");
+    const slides = document.getElementsByClassName("carousel-image");
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
