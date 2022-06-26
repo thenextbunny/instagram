@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
@@ -33,7 +26,6 @@ main {
     height: 100vh;
     min-height: 630px;
     width: 100%;
-    padding-top: 15px;
 }
 
 /* Containers */
@@ -46,9 +38,9 @@ main {
 
 /* Image container */
 #image-container {
-    background: url(../images/phone/phone.png) no-repeat center;
+    background: url(../images/phone/phone.png) no-repeat bottom;
     position: relative;
-    height: 640px;
+    height: 650px;
     width: 400px;
 }
 
@@ -56,8 +48,12 @@ main {
     .carousel {
         float: right;
         right: 26px;
-        top: 28px;
+        top: 40px;
         position: absolute;
+    }
+
+    .carousel-image:not(:first-child) {
+        display: none;
     }
 
     .fade {
@@ -69,7 +65,7 @@ main {
         from {
             opacity: 0;
         }
-        
+
         to {
             opacity: 1;
         }
@@ -284,7 +280,7 @@ li.select-language {
 span.current-language {
     height: 100%;
     position: relative;
-    width: 100%;
+    width: 80%;
 }
 
 select {
