@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
@@ -50,10 +57,6 @@ main {
         right: 26px;
         top: 40px;
         position: absolute;
-    }
-
-    .carousel-image:not(:first-child) {
-        display: none;
     }
 
     .fade {
@@ -280,7 +283,7 @@ li.select-language {
 span.current-language {
     height: 100%;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 select {
@@ -297,16 +300,18 @@ select {
     text-align: center;
 }
 
-.thenextbunny i {
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 5px;
+.thenextbunny img {
+    filter: invert(62%) sepia(1%) saturate(3974%) hue-rotate(24deg) brightness(92%) contrast(80%);
+    height: 25px;
+    margin: 10px 0;
     transition: all 1.2s;
+    width: 25px;
 }
 
-.thenextbunny i:hover {
-    color: #000;
+.thenextbunny img:hover {
+    filter: none;
 }
+
 
 /* Media queries */
     /* Extra small devices (portrait phones, less than 576px) */
