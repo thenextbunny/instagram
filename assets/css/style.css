@@ -1,14 +1,8 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     outline: 0;
@@ -21,15 +15,25 @@ body {
 }
 
 article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-width: 280px;
 }
 
 main {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100vh;
     min-height: 630px;
     width: 100%;
@@ -59,26 +63,38 @@ main {
         position: absolute;
     }
 
-    .fade {
-        animation: fade 3s;
-        transition: ease 0.5s;
+    .carousel-image {
+        -webkit-animation: opacity 8s;
+                animation: opacity 8s;
+        -webkit-transition: 1.5s ease;
+        -o-transition: 1.5s ease;
+        transition: 1.5s ease;
     }
 
-    @keyframes fade {
-        from {
-            opacity: 0;
-        }
+    @-webkit-keyframes opacity {
+        0% {opacity: 0.3;}
+        40% {opacity: 1;}
+        100% {opacity: 0;}
+    }
 
-        to {
-            opacity: 1;
-        }
+    @keyframes opacity {
+        0% {opacity: 0.3;}
+        40% {opacity: 1;}
+        100% {opacity: 0;}
     }
 
 /* Login container */
 #login-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     min-width: 275px;
     width: 350px;
@@ -92,8 +108,12 @@ main {
 
     /* Form */
     form .form-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 0 auto 13px auto;
         position: relative;
         width: 80%;
@@ -103,11 +123,13 @@ main {
         background-color: #fafafa;
         border: 1px solid rgba(212, 212, 212, 0.856);
         border-radius: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 36px;
     }
 
-    form input {
+    form input, form button {
         background: transparent;
         border: none;
         height: 34px;
@@ -130,9 +152,15 @@ main {
         padding: 1px 0 0 4px;
         position: absolute;
         text-align: left;
-        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        -webkit-transition: all 0.8s;
+        -o-transition: all 0.8s;
         transition: all 0.8s;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         white-space: nowrap;
         width: 100%;  
     }
@@ -154,7 +182,10 @@ main {
         font-weight: 600;
         height: 100%;
         padding-right: 5px;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
     }
 
     form div.password-view {
@@ -170,7 +201,7 @@ main {
     }
 
     /* Log in */
-    form input#login {
+    form button#login {
         background-color: #b2dffb; /*It is defined in the form.js as inputLogin.style.background*/
         border-radius: 4px;
         color: #fff;
@@ -257,10 +288,17 @@ footer {
 }
 
 footer ul {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;  
     position: relative;
 }
@@ -301,15 +339,19 @@ select {
 }
 
 .thenextbunny img {
-    filter: invert(62%) sepia(1%) saturate(3974%) hue-rotate(24deg) brightness(92%) contrast(80%);
+    -webkit-filter: invert(62%) sepia(1%) saturate(3974%) hue-rotate(24deg) brightness(92%) contrast(80%);
+            filter: invert(62%) sepia(1%) saturate(3974%) hue-rotate(24deg) brightness(92%) contrast(80%);
     height: 25px;
     margin: 10px 0;
+    -webkit-transition: all 1.2s;
+    -o-transition: all 1.2s;
     transition: all 1.2s;
     width: 25px;
 }
 
 .thenextbunny img:hover {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
 }
 
 
