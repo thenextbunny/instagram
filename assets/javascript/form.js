@@ -10,7 +10,7 @@ logIn.disabled = true;
 
 function verify() {
     if (user.value.length > 1 && password.value.length > 5) {
-        logIn.disabled = true; /* Form submission is disabled. Switch to false to enable.*/
+        logIn.disabled = false;
         logIn.style.background = '#0095f6';
         logIn.style.cursor = "pointer";
     } else {
