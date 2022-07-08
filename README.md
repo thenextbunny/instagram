@@ -4,7 +4,7 @@
 </div>
 <div>
   <h3>Sobre o projeto</h3>
-  <p>O projeto deste repositório é o clone da página inicial do <a href="https://instagram.com">Instagram</a> utilizando HTML5, CSS3 e JavaScript.</>
+  <p>O projeto deste repositório é o clone da página de login do <a href="https://instagram.com">Instagram</a> utilizando HTML5, CSS3 e JavaScript.</>
 
   ### [Clique aqui para visualizar a página final do projeto](https://thenextbunny.github.io/instagram/)
   
