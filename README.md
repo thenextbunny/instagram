@@ -4,7 +4,7 @@
 </div>
 <div>
   <h3>Sobre o projeto</h3>
-  <p>O projeto deste repositório é o clone da página de login do <a href="https://instagram.com">Instagram</a> utilizando HTML5, CSS3 e JavaScript.</>
+  <p>O projeto deste repositório é o clone da página de login do <a href="https://instagram.com">Instagram</a> utilizando HTML5, CSS3 e JavaScript. Além disso, é responsivo e se adapta aos diferentes tipos de tela.</>
 
   ### [Clique aqui para visualizar a página final do projeto](https://thenextbunny.github.io/instagram/)
   
@@ -14,9 +14,6 @@
     <li>CSS3</li>
     <li>JavaScript</li>
   </ul>
-  
-  <h3>É responsivo?</h3>
-  <p>Sim. O <a href="https://thenextbunny.github.io/instagram-home-page/)">projeto</a> é um site totalmente responsivo, logo se adequa aos diferentes tipos de tela.</p>
 
   <h3>Imagens</h3>
   <h5>Desktop</h5>
