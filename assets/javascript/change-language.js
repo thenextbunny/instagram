@@ -2,7 +2,7 @@
 /* PT-BR - Verifica se o usuário selecionou algum idioma no select e redireciona para a página escolhida. */
 const selectLanguage = document.querySelector("select");
 
-selectLanguage.onchange = function () {
+selectLanguage.addEventListener('change', () => {
     language = selectLanguage.value;
     
     switch (language) {
@@ -22,4 +22,4 @@ selectLanguage.onchange = function () {
             location = "fr.html";
         break;
     }
-}
+});

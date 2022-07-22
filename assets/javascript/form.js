@@ -2,13 +2,13 @@
 /* PT-BR - Verifica o conteúdo nas entradas de nome de usuário e senha. Depois disso ativa e desativa o botão de login e altera seu plano de fundo. */
 const user = document.querySelector('#user');
 const password = document.querySelector('#password');
-const logIn = document.querySelector('#login');
 
 password.addEventListener('keyup', verify);
 user.addEventListener('keyup', verify);
-logIn.disabled = true;
 
 function verify() {
+    const logIn = document.querySelector('#login');
+
     if (user.value.length > 1 && password.value.length > 5) {
         logIn.disabled = false;
         logIn.style.background = '#0095f6';
@@ -23,11 +23,12 @@ function verify() {
 
 /* EN - Checks if the user has typed any value in the password entry and with that shows the password preview button. */
 /* PT-BR - Verifica se o usuário digitou algum valor na entrada de senha e com isso mostra o botão de visualização de senha. */
-const passwordShow = document.querySelector(".password-show");
-const passwordHide = document.querySelector(".password-hide")
 const passwordView = document.querySelector(".password-view");
     
 passwordView.addEventListener("click", function () {
+    const passwordShow = document.querySelector(".password-show");
+    const passwordHide = document.querySelector(".password-hide");
+
     if (password.type === "password") {
         password.type = "text";
         passwordShow.style.display = "none";
