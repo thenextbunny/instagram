@@ -24,8 +24,8 @@ function verify() {
 /* EN - Checks if the user has typed any value in the password entry and with that shows the password preview button. */
 /* PT-BR - Verifica se o usuário digitou algum valor na entrada de senha e com isso mostra o botão de visualização de senha. */
 const passwordView = document.querySelector(".password-view");
-    
-passwordView.addEventListener("click", function () {
+
+passwordView.addEventListener("click", () => {
     const passwordShow = document.querySelector(".password-show");
     const passwordHide = document.querySelector(".password-hide");
 
@@ -38,4 +38,4 @@ passwordView.addEventListener("click", function () {
         passwordShow.style.display = "block";
         passwordHide.style.display = "none";
     }
-})
+});
